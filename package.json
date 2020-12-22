@@ -1,0 +1,41 @@
+{
+    "name": "typescript-todo-list",
+    "version": "1.0.0",
+    "description": "Learning typescript by building a todo-list",
+    "main": "./src/app.js",
+    "scripts": {
+        "dev-client": "parcel index.html",
+        "build": "parcel build --no-content-hash --no-source-maps index.html --public-url ./",
+        "type-check": "tsc --noEmit --watch",
+        "clean": "rm -rf .cache && rm-rf dist && echo \"npm clean completed\"",
+        "test": "jest --watchAll"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yasinosman/typescript-todo-list.git"
+    },
+    "keywords": [
+        "TS",
+        "TypeScript",
+        "JavaScript",
+        "Todo",
+        "List"
+    ],
+    "author": "Yasin Osman",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yasinosman/typescript-todo-list/issues"
+    },
+    "homepage": "https://github.com/yasinosman/typescript-todo-list#readme",
+    "devDependencies": {
+        "@types/jest": "^26.0.18",
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.27.0",
+        "ts-jest": "^26.4.4",
+        "typescript": "^4.1.2"
+    },
+    "dependencies": {
+        "redux": "^4.0.5",
+        "uuid": "^8.3.2"
+    }
+}

@@ -1,0 +1,50 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+.todoList {
+    width: 80vw;
+    min-width: 300px;
+    max-width: 768px;
+    height: 50vh;
+    min-height: 350px;
+    max-height: 768px;
+    margin: 25vh auto;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+
+    .todoList__container--small {
+        grid-row: 1/2;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .todoList__container--large {
+        grid-row: 2/3;
+        background-color: blue;
+
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .form {
+        width: 80%;
+        max-width: 500px;
+        height: 50%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form__input {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
